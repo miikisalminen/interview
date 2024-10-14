@@ -1,0 +1,7 @@
+{
+
+	"env": {"deno": true},
+	"extends": [
+		"eslint:recommended"
+	]
+}
