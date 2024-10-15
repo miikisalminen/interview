@@ -1,5 +1,6 @@
 ### Todo list brainstorming notes and thoughts
 
+- [ ] Room creation & Joining
 - [ ] WebRTC flow
 - [ ] Handle exit with beforeunload Event
 - [ ] Signaling server (written in Go?)
