@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function LandingPage() {
+  const router = useRouter();
   const [roomCode, setRoomCode] = useState("");
 
   const handleJoin = () => {
-    alert("Coming soon!");
+    router.push(`/room/${roomCode}`);
   };
 
   const handleCreate = () => {
