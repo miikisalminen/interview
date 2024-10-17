@@ -3,16 +3,20 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Modal from "./Modal";
+import RoomCreationForm from "./RoomCreationForm";
+
 export default function LandingPage() {
   const router = useRouter();
   const [roomCode, setRoomCode] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const handleJoin = () => {
     router.push(`/room/${roomCode}`);
   };
 
   const handleCreate = () => {
-    alert("Coming soon!");
+    setShowModal(true);
   };
 
   return (
@@ -38,6 +42,13 @@ export default function LandingPage() {
       >
         Create Chatroom
       </button>
+
+      {showModal && (
+        <Modal onClose={() => setShowModal(false)}>
+          <h1>Modal time!</h1>
+          <RoomCreationForm />
+        </Modal>
+      )}
     </div>
   );
 }

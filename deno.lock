@@ -2262,6 +2262,7 @@
         "npm:eslint-config-next@14.2.15",
         "npm:eslint-plugin-deno@^0.0.1",
         "npm:eslint@8",
+        "npm:jest@^29.7.0",
         "npm:next@14.2.15",
         "npm:pg-hstore@^2.3.4",
         "npm:pg@^8.13.0",
